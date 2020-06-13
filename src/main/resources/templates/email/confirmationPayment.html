@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title th:remove="all">Order Confirmation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div>
+		<h1>
+			Ingresso número: <span th:text="${payment.id}"></span>
+		</h1>
+
+		<h3>
+			Status do Pagamento : <span th:text="${payment.status.text}"></span>
+		</h3>
+	</div>
+	<div>
+		<h3>A entrada no evento será confirmada com o QR.</h3>
+	</div>
+	<div>
+		<img src="cid:img" />
+	</div>
+</body>
+</html>
